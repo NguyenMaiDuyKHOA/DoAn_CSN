@@ -1,6 +1,72 @@
 use DacSan;
 db.Collection.insertMany([
     {
+    	id: "01",
+    	tendacsan: "Bún nước lèo",
+    	nguyenlieu: [
+    		{
+    			tennl: "Bún",
+    			luong: "200g",
+    			gianl: "3.000đ"
+    		},
+    		{
+    			tennl: "Mắm",
+    			luong: "50g",
+    			gianl: "2.000đ"
+    		},
+    		{
+    			tennl: "Cá",
+    			luong: "300g",
+    			gianl: "10.000đ"
+    		},
+    		{
+    			tennl: "Rau sống",
+    			luong: "200g",
+    			gianl: "5.000đ"
+    		}
+    	],
+    	huongvi: "Hương thơm đặc trưng của mắm",
+    	mausac: "Vàng",
+    	quycach: "Sử dụng tô",
+    	quytrinhsx: "Chế biến nhanh 10-20p",
+    	xuatxu: [
+    		{
+    			monandantoc: "Khmer"
+    		}
+    	],
+    	loaisanpham: [
+    		{
+    			phanloai: "Thức ăn",
+    			khoiluong: "500g"
+    		}
+    	],
+    	cachsudung: "Ăn ngay sau khi chế biến",
+    	hansudung: [
+    		{
+    			nsx: "Ngày chế biến",
+    			hsd: "Trong ngày"
+    		}
+    	],
+    	diadiemban: [
+    		{
+    			tenquan: "Quán Cây Sung",
+    			duong: "676 Võ Nguyên Giáp",
+    			huyentp: "TP Trà Vinh",
+    			phuongxa: "Phường 8",
+    			sdt: "",
+    			xephangcuakh: "Chưa có",
+    			nhanxetcuakh: "Chưa có" 
+    		}
+    	],
+    	giaban: [
+    		{
+    			giamonan: "25.000đ",
+    			phuphiphatsinh: ["Huyết(1.000đ/cục)","Bánh giò(1.000đ/cái)","Bánh giá(3.000đ/cái)"]
+    		}
+    	]
+    },
+
+    {
         id: "05",
         tendacsan: "Cháo cá khoai",
         nguyenlieu: [
