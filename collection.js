@@ -7,22 +7,22 @@ db.Collection.insertMany([
     		{
     			tennl: "Bún",
     			luong: "200g",
-    			gianl: "3.000đ"
+    			gianl: 3000
     		},
     		{
     			tennl: "Mắm",
     			luong: "50g",
-    			gianl: "2.000đ"
+    			gianl: 2000
     		},
     		{
     			tennl: "Cá",
     			luong: "300g",
-    			gianl: "10.000đ"
+    			gianl: 10000
     		},
     		{
     			tennl: "Rau sống",
     			luong: "200g",
-    			gianl: "5.000đ"
+    			gianl: 5000
     		}
     	],
     	huongvi: "Hương thơm đặc trưng của mắm",
@@ -60,12 +60,198 @@ db.Collection.insertMany([
     	],
     	giaban: [
     		{
-    			giamonan: "25.000đ",
-    			phuphiphatsinh: ["Huyết(1.000đ/cục)","Bánh giò(1.000đ/cái)","Bánh giá(3.000đ/cái)"]
+    			giamonan: 25000,
+    			phuphiphatsinh: [
+    			    {
+    			        huyet: 1000,
+    			        banhgio: 1000,
+    			        banhgia: 3000
+    			    }        
+    			]
     		}
     	]
     },
-
+    {
+    	id: "02",
+    	tendacsan: "Chù ụ rang me",
+    	nguyenlieu: [
+    		{
+    			tennl: "Chù ụ",
+    			luong: "500g",
+    			gianl: 100000
+    		},
+    		{
+    			tennl: "Me",
+    			luong: "100g",
+    			gianl: 5000
+    		}
+    	],
+    	huongvi: "Chua ngọt của chù ụ và me",
+    	mausac: ["Đỏ","Vàng"],
+    	quycach: "Sử dụng đĩa",
+    	quytrinhsx: "Chế biến kĩ 20-30p",
+    	xuatxu: [
+    		{
+    			monandantoc: "Kinh",
+    		}
+    	],
+    	loaisanpham: [
+    		{
+    			phanloai: "Thức ăn",
+    			khoiluong: "500g",
+    		}
+    	],
+    	cachsudung: "Dùng ngay sau khi chế biến",
+    	hansudung: [
+    		{
+    			nsx: "Ngày chế biến",
+    			hsd: "Trong ngày"
+    		}
+    	],
+    	diadiemban: [
+    		{
+    			tenquan: "Quán Ngọc Tiền",
+    			huyentp: "Trà Cú",
+    			phuongxa: "Hàm Tân",
+    			sdt: "",
+    			xephangcuakh: "Chưa có",
+    			nhanxetcuakh: "Chưa có" 
+    		}
+    	],
+    	giaban: [
+    		{
+    			giamonan: 120000
+    		}
+    	]
+    },
+    {
+    	id: "03",
+    	tendacsan: "Bánh canh Bến Có",
+    	nguyenlieu: [
+    		{
+    			tennl: "Bánh canh",
+    			luong: "200g",
+    			gianl: 3000
+    		},
+    		{
+    			tennl: "Xương heo",
+    			luong: "200g",
+    			gianl: 10000
+    		},
+    		{
+    			tennl: "Giá đỗ",
+    			luong: "100g",
+    			gianl: 2000
+    		}
+    	],
+    	huongvi: "Hương thơm đậm đà của xương heo",
+    	mausac: "Trắng",
+    	quycach: "Sử dụng tô",
+    	quytrinhsx: "Chế biến kĩ 50-60p",
+    	xuatxu: [
+    		{
+    			monandantoc: "Kinh",
+    		}
+    	],
+    	loaisanpham: [
+    		{
+    			phanloai: "Thức ăn",
+    			khoiluong: "500g"
+    		}
+    	],
+    	cachsudung: "Dùng ngay sau khi chế biến",
+    	hansudung: [
+    		{
+    			nsx: "Ngày chế biến",
+    			hsd: "Trong ngày"
+    		}
+    	],
+    	diadiemban: [
+    		{
+    			tenquan: "Quán Út Hảo",
+    			duong: "QL53",
+    			huyentp: "Châu Thành",
+    			phuongxa: "Nguyệt Hóa",
+    			sdt: "",
+    			xephangcuakh: "Chưa có",
+    			nhanxetcuakh: "Chưa có" 
+    		}
+    	],
+    	giaban: [
+    		{
+    			giamonan: 25000,
+    			phuphiphatsinh: [
+    			    {
+    			        bancanhthem: 5000
+    			    }
+    			]
+    		}
+    	]
+    },
+    {
+    	id: "04",
+    	tendacsan: "Bún suông",
+    	nguyenlieu: [
+    		{
+    			tennl: "Bún",
+    			luong: "200g",
+    			gianl: 3000
+    		},
+    		{
+    			tennl: "Chả tôm",
+    			luong: "100g",
+    			gianl: 10000
+    		},
+    		{
+    			tennl: "Giá đỗ",
+    			luong: "200g",
+    			gianl: 2000
+    		},
+    		{
+    			tennl: "Xương heo",
+    			luong: "200g",
+    			gianl: 10000
+    		}
+    	],
+    	huongvi: "Hương thơm đậm vị của tôm và xương heo",
+    	mausac: "Vàng",
+    	quycach: "Sử dụng tô",
+    	quytrinhsx: "Chế biến kĩ 50-60p",
+    	xuatxu: [
+    		{
+    			monandantoc: "Kinh"
+    		}
+    	],
+    	loaisanpham: [
+    		{
+    			phanloai: "Thức ăn",
+    			khoiluong: "500g"
+    		}
+    	],
+    	cachsudung: "Dùng ngay sau khi chế biến",
+    	hansudung: [
+    		{
+    			nsx: "Ngày chế biến",
+    			hsd: "Trong ngày"
+    		}
+    	],
+    	diadiemban: [
+    		{
+    			tenquan: "Bún suông Hùi Yến",
+    			duong: "56 Hùng Vương",
+    			huyentp: "TP Trà Vinh",
+    			phuongxa: "Phường 3",
+    			sdt: "",
+    			xephangcuakh: "Chưa có",
+    			nhanxetcuakh: "Chưa có" 
+    		}
+    	],
+    	giaban: [
+    		{
+    			giamonan: 35000
+    		}
+    	]
+    },
     {
         id: "05",
         tendacsan: "Cháo cá khoai",
@@ -73,17 +259,17 @@ db.Collection.insertMany([
             {
                 tennl: "Gạo",
                 luong: "200g",
-                gianl: "3.000đ"
+                gianl: 3000
             },
             {
                 tennl: "Cá khoai",
                 luong: "200g",
-                gianl: "15.000đ"
+                gianl: 15000
             },
             {
                 tennl: "Rau sống",
                 luong: "100g",
-                gianl: "2.000đ"
+                gianl: 2000
             }
         ],
         huongvi: "Hương thơm đâm vị, ngọt thịt của cá",
@@ -120,7 +306,7 @@ db.Collection.insertMany([
         ],
         giaban: [
             {
-                giamonan: "25.000đ"
+                giamonan: 25000
             }
         ]
     },
@@ -186,7 +372,14 @@ db.Collection.insertMany([
         ],
         giaban: [
             {
-                giatheochatluongsp: ["Loại 1: 200.000đ", "Loại 2: 150.000đ", "Loại 3: 100.000đ"],
+                giatheochatluongsp: [
+                    {
+                        
+                        loai1: 200000,
+                        loai2: 150000,
+                        loai3: 100000
+                    }        
+                ],
             }
         ]
     },
@@ -197,7 +390,7 @@ db.Collection.insertMany([
             {
                 tennl: "Tôm",
                 luong: "500g",
-                gianl: "300.000đ"
+                gianl: 300000
             }
         ],
         huongvi: "Hương vị ngọt của tôm",
@@ -246,7 +439,12 @@ db.Collection.insertMany([
         ],
         giaban: [
             {
-                giatheohinhthucsp: ["Đóng gói sẵn túi 500g: 600.000đ", "Bán lẻ: 1.200.000đ/Kg"]
+                giatheohinhthucsp: [
+                    {
+                        donggoi500g: 600000,
+                        banle: 1200000
+                    }       
+                ]
             }
         ]
     },
@@ -257,7 +455,7 @@ db.Collection.insertMany([
             {
                 tennl: "Con rươi",
                 luong: "1kg",
-                gianl: "200.000đ"
+                gianl: 200000
             }
         ],
         huongvi: "Mặn mà vị nước mắm",
@@ -309,7 +507,12 @@ db.Collection.insertMany([
         ],
         giaban: [
             {
-                giatheochatluongsp: ["Loại đặc biệt: 110.000đ", "Loại thường: 95.000đ"]
+                giatheochatluongsp: [
+                    {
+                        loaidacbiet: 110000,
+                        loaihthuong: 95000
+                    }        
+                ]
             }
         ]
     },
@@ -379,7 +582,7 @@ db.Collection.insertMany([
         ],
         giaban: [
             {
-                giasanpham: "100.000đ"
+                giasanpham: 100000
             }
         ]
     },
@@ -449,7 +652,13 @@ db.Collection.insertMany([
         ],
         giaban: [
             {
-                giatheochatluongsp: ["Rươu XT đế (60 độ): 50.000đ", "Rượu XT lão tửu (20-29 độ): 30.000đ", "Rươu chuối hột XT (29-40 độ: 40.000đ"],
+                giatheochatluongsp: [
+                    {
+                        loai1: 50000,
+                        loại2: 40000,
+                        loai3: 30000
+                    }        
+                ],
             }
         ]
     }
